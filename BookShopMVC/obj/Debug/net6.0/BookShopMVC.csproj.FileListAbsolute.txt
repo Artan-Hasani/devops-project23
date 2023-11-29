@@ -28,3 +28,10 @@ C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Pro
 C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\obj\Debug\net6.0\BookShopMVC.pdb
 C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\obj\Debug\net6.0\BookShopMVC.genruntimeconfig.cache
 C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\obj\Debug\net6.0\ref\BookShopMVC.dll
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\obj\Debug\net6.0\BookShopMVC.csproj.AssemblyReference.cache
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\obj\Debug\net6.0\BookShopMVC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\artan\Desktop\Artan\1-Fakultet\8-Materialet e semestrit te 8\DevOps\Project\devops-project23\BookShopMVC\obj\Debug\net6.0\BookShopMVC.csproj.CopyComplete

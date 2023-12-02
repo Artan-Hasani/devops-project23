@@ -1,5 +1,6 @@
 ﻿using BookShopMVC.Models.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookShopMVC.Controllers
 {
@@ -13,10 +14,10 @@ namespace BookShopMVC.Controllers
         }
 
         [HttpGet("GetBooks")]
-        public IActionResult GetBooks()
+        public async Task<IActionResult> GetBooks()
         {
-            var book = _dbContext.Books.FirstOrDefault(b => b.Id == 1);
-            return Ok(book);
+            var books = await _dbContext.Books.ToListAsync();
+            return Ok(books);
         }
     }
 }

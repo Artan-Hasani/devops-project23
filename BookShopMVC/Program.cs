@@ -18,6 +18,8 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 });
 
+//AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 
 var app = builder.Build();
 

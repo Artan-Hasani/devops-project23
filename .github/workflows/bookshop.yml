@@ -1,0 +1,22 @@
+name: Docker CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Docker Compose
+      run: docker-compose up --build -d
+
+    - name: Test
+      run: |
+        docker exec book_shop_services dotnet test

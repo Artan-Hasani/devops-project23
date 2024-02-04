@@ -19,7 +19,7 @@ jobs:
         context: ./BookShopMVC
         file: ./BookShopMVC/Dockerfile
         push: true
-        tags: ${{ github.repository | toLower }}/bookshop:latest
+        tags: artan-hasani/devops-project23/bookshop:latest
 
     - name: Set up Docker Compose
       run: |

@@ -26,5 +26,10 @@ jobs:
         sudo docker-compose -f ./BookShopMVC/docker-compose.yml build
         sudo docker-compose -f ./BookShopMVC/docker-compose.yml up -d
 
+      env:
+        POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+        POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+        POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
+
     - name: Stop Docker Compose
       run: sudo docker-compose -f ./BookShopMVC/docker-compose.yml down

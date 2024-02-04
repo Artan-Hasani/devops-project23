@@ -1,25 +1,30 @@
-name: Docker CI
+name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-    - name: Change directory
-      run: cd BookShopMVC
+    - name: Build and Push Docker Image
+      uses: docker/build-push-action@v2
+      with:
+        context: ./BookShopMVC
+        file: ./BookShopMVC/Dockerfile
+        push: true
+        tags: ${{ github.repository }}/bookshop:latest
 
-    - name: Build Docker Compose
-      run: docker-compose up --build -d
-
-    - name: Test
+    - name: Set up Docker Compose
       run: |
-        docker exec book_shop_services dotnet test
+        sudo docker-compose -f ./BookShopMVC/docker-compose.yml build
+        sudo docker-compose -f ./BookShopMVC/docker-compose.yml up -d
+
+    - name: Stop Docker Compose
+      run: sudo docker-compose -f ./BookShopMVC/docker-compose.yml down

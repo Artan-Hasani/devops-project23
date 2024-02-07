@@ -1,4 +1,4 @@
-name: Book Shop CI/CD Pipeline
+name: Book Shop Pipeline
 
 on:
   push:
